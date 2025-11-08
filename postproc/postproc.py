@@ -834,7 +834,7 @@ def progressive_hough_transform(edges, min_line_length=10, min_threshold=10, ini
         threshold = max(min_threshold, int(threshold * 0.5))
         lgap = max(2,int(lgap*0.5))
 
-     return all_lines
+    return all_lines
 
 def postproc(subfile, detfile, outputfile, plotroot, save, plot, skeleton,
              progressive, gpu, filter_radius, nclose, nhalf, nsig, gap):
